@@ -18,7 +18,6 @@ If you are interested in our work, please star ⭐ our project.
 </p>
 
 
-
 ### SmartEdit on Understanding Scenarios
 <p align="center">
   <img src="https://yuzhou914.github.io/SmartEdit/assets/3-Understanding.jpg">
