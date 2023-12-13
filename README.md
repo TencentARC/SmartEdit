@@ -3,7 +3,7 @@
 <div align="center">
   
 ## SmartEdit: Exploring Complex Instruction-based Image Editing with Multimodal Large Language Models
-[[Paper](https://yuzhou914.github.io/SmartEdit/)]
+[[Paper](https://arxiv.org/abs/2312.06739)]
 [[Project Page](https://yuzhou914.github.io/SmartEdit/)]
 [Demo] <be>
 </div>
