@@ -2,7 +2,7 @@
 <p align="center"> <img src="https://yuzhou914.github.io/SmartEdit/assets/Logo.jpg" height=100> </p>
 <div align="center">
   
-## SmartEdit: Exploring Complex Instruction-based Image Editing with Multimodal Large Language Models
+## SmartEdit: Exploring Complex Instruction-based Image Editing with Multimodal Large Language Models (CVPR-2024)
 [[Paper](https://arxiv.org/abs/2312.06739)]
 [[Project Page](https://yuzhou914.github.io/SmartEdit/)]
 [Demo] <be>
