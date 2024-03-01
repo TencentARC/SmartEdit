@@ -34,8 +34,8 @@ If you are interested in our work, please star ⭐ our project.
 ```
 @article{huang2023smartedit,
   title={SmartEdit: Exploring Complex Instruction-based Image Editing with Multimodal Large Language Models},
-  author={Huang, Yuzhou and Xie, Liangbin and Wang, Xintao and Yuan, Ziyang and Cun, Xiaodong and Ge, Yixiao and Zhou, Jiantao and Dong, Chao and Huang, Rui and Zhang, Ruimao and Shan, Ying},
-  booktitle={arXiv preprint arxiv:2312.06739},
+  author={Huang, Yuzhou and Xie, Liangbin and Wang, Xintao and Yuan, Ziyang and Cun, Xiaodong and Ge, Yixiao and Zhou, Jiantao and Dong, Chao and Huang, Rui and Zhang, Ruimao and others},
+  journal={arXiv preprint arXiv:2312.06739},
   year={2023}
 }
 ```
