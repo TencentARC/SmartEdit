@@ -8,7 +8,7 @@
 [Demo] <be>
 </div>
 
-🔥🔥 2024.04. We are cleaning the code and we will release code in these two weeks.
+🔥🔥 2024.04. We are cleaning the code and we will release code in this month.
 
 🔥🔥 2024.04. SmartEdit is selected as highlight by CVPR-2024!
 
