@@ -8,7 +8,9 @@
 [Demo] <be>
 </div>
 
-🔥🔥 2024.02.27. SmartEdit is accepted by CVPR-2024!
+🔥🔥 2024.04. We are cleaning the code and we will release code in these two weeks.
+🔥🔥 2024.04. SmartEdit is selected as highlight by CVPR-2024!
+🔥🔥 2024.02. SmartEdit is accepted by CVPR-2024!
 
 We are currently organizing the code for SmartEdit may bring as soon as possible.
 If you are interested in our work, please star ⭐ our project. 
