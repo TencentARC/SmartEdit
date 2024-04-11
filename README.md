@@ -34,6 +34,9 @@ If you are interested in our work, please star ⭐ our project.
   <img src="https://yuzhou914.github.io/SmartEdit/assets/4-Reasoning.jpg">
 </p>
 
+### Contact
+For any question, feel free to email yuzhouhuang@link.cuhk.edu.cn.
+
 ### Citation	
 ```
 @article{huang2023smartedit,
