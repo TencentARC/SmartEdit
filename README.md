@@ -89,6 +89,7 @@ If you are interested in our work, please star ⭐ our project.
 
 ### Metrics Evaluation
 - Use the script to compute metrics on Reason-Edit (256x256 resolution):
+- 
         python test/metrics_evaluation.py --edited_image_understanding_dir "./checkpoints/SmartEdit-7B/Understand-15000" --edited_image_reasoning_dir "./checkpoints/SmartEdit-7B/Reason-15000"
         python test/metrics_evaluation.py --edited_image_understanding_dir "./checkpoints/SmartEdit-13B/Understand-15000" --edited_image_reasoning_dir "./checkpoints/SmartEdit-13B/Reason-15000"
 
