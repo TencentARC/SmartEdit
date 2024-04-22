@@ -102,7 +102,7 @@ If you are interested in our work, please star ⭐ our project.
 - [ ] Web demo.
 
 ### Contact
-For any question, feel free to email yuzhouhuang@link.cuhk.edu.cn.
+For any question, feel free to email yuzhouhuang@link.cuhk.edu.cn and lb.xie@siat.ac.cn
 
 ### Citation	
 ```
