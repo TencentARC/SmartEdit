@@ -46,7 +46,7 @@ If you are interested in our work, please star ⭐ our project.
 - Please put the prepared checkpoints in file `checkpoints`.
 - Prepare Vicuna-1.1-7B/13B checkpoint: please download [Vicuna-1.1-7B](https://huggingface.co/lmsys/vicuna-7b-v1.1) and [Vicuna-1.1-13B](https://huggingface.co/lmsys/vicuna-13b-v1.1) in link.
 - Prepare LLaVA-1.1-7B/13B checkpoint: please follow the [LLaVA instruction](https://github.com/haotian-liu/LLaVA/blob/main/docs/MODEL_ZOO.md) to prepare LLaVA-1.1-7B/13B weights.
-- Prepare InstructDiffusion checkpoint: please download [InstructDiffusion(v1-5-pruned-emaonly-adaption-task.ckpt)](https://github.com/cientgu/InstructDiffusion/tree/main) and the repo in link. Download them first and use `python convert_original_stable_diffusion_to_diffusers.py --checkpoint_path "./checkpoint/InstructDiffusion/v1-5-pruned-emaonly-adaption-task.ckpt" --original_config_file "./checkpoint/InstructDiffusion/configs/instruct_diffusion.yaml" --dump_path "./checkpoint/InstructDiffusion_diffusers"`.
+- Prepare InstructDiffusion checkpoint: please download [InstructDiffusion(v1-5-pruned-emaonly-adaption-task.ckpt)](https://github.com/cientgu/InstructDiffusion/tree/main) and the repo in link. Download them first and use `python convert_original_stable_diffusion_to_diffusers.py --checkpoint_path "./checkpoints/InstructDiffusion/v1-5-pruned-emaonly-adaption-task.ckpt" --original_config_file "./checkpoints/InstructDiffusion/configs/instruct_diffusion.yaml" --dump_path "./checkpoints/InstructDiffusion_diffusers"`.
 
 ### Training dataset preparation
 - Please put the prepared checkpoints in file `dataset`.
