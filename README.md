@@ -61,6 +61,10 @@ If you are interested in our work, please star ⭐ our project.
 
         bash scripts/TrainStage1_7b.sh
         bash scripts/TrainStage1_13b.sh
+- Then, use the script to inference:
+
+        python test/TrainStage1_inference.py --model_name_or_path "./checkpoints/vicuna-7b-v1-1" --LLaVA_model_path "./checkpoints/LLaVA-7B-v1" --save_dir './checkpoints/stage1_CC12M_alignment_7b/Results-100000' --pretrain_model "./checkpoints/stage1_CC12M_alignment_7b/embeddings_qformer/checkpoint-150000.bin" --get_orig_out --LLaVA_version "v1.1-7b"
+        python test/TrainStage1_inference.py --model_name_or_path "./checkpoints/vicuna-13b-v1-1" --LLaVA_model_path "./checkpoints/LLaVA-13B-v1" --save_dir './checkpoints/stage1_CC12M_alignment_13b/Results-100000' --pretrain_model "./checkpoints/stage1_CC12M_alignment_13b/embeddings_qformer/checkpoint-150000.bin" --get_orig_out --LLaVA_version "v1.1-13b"
 
 ### Stage-2: SmartEdit training
 - Use the script to train first:
