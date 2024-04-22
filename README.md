@@ -35,22 +35,22 @@ If you are interested in our work, please star ⭐ our project.
 
 
 ### Dependencies and Installation
-pip install torch==2.1.0 torchvision==0.16.0 torchaudio==2.1.0 --index-url https://download.pytorch.org/whl/cu118
-pip install -r requirements.txt 
-git clone https://github.com/Dao-AILab/flash-attention.git
-cd flash-attention
-pip install . --no-build-isolation
-cd ..
+        pip install torch==2.1.0 torchvision==0.16.0 torchaudio==2.1.0 --index-url https://download.pytorch.org/whl/cu118
+        pip install -r requirements.txt 
+        git clone https://github.com/Dao-AILab/flash-attention.git
+        cd flash-attention
+        pip install . --no-build-isolation
+        cd ..
 
 ### Training model preparation
-- Please put the prepared checkpoints in file `checkpoints`
+- Please put the prepared checkpoints in file `checkpoints`.
 - Prepare Vicuna-1.1-7B/13B checkpoint: please download [Vicuna-1.1-7B](https://huggingface.co/lmsys/vicuna-7b-v1.1) and [Vicuna-1.1-13B](https://huggingface.co/lmsys/vicuna-13b-v1.1) in link.
 - Prepare LLaVA-1.1-7B/13B checkpoint: please follow the [LLaVA instruction](https://github.com/haotian-liu/LLaVA/blob/main/docs/MODEL_ZOO.md) to prepare LLaVA-1.1-7B/13B weights.
-- Prepare InstructDiffusion checkpoint: please download [InstructDiffusion(v1-5-pruned-emaonly-adaption-task.ckpt)](https://github.com/cientgu/InstructDiffusion/tree/main) and the repo in link. Download them first and use `python convert_original_stable_diffusion_to_diffusers.py --checkpoint_path "./checkpoint/InstructDiffusion/v1-5-pruned-emaonly-adaption-task.ckpt" --original_config_file "./checkpoint/InstructDiffusion/configs/instruct_diffusion.yaml" --dump_path "./checkpoint/InstructDiffusion_diffusers"`
+- Prepare InstructDiffusion checkpoint: please download [InstructDiffusion(v1-5-pruned-emaonly-adaption-task.ckpt)](https://github.com/cientgu/InstructDiffusion/tree/main) and the repo in link. Download them first and use `python convert_original_stable_diffusion_to_diffusers.py --checkpoint_path "./checkpoint/InstructDiffusion/v1-5-pruned-emaonly-adaption-task.ckpt" --original_config_file "./checkpoint/InstructDiffusion/configs/instruct_diffusion.yaml" --dump_path "./checkpoint/InstructDiffusion_diffusers"`.
 
 ### Training dataset preparation
-- Please put the prepared checkpoints in file `dataset`
-- Prepare CC12M dataset: https://storage.googleapis.com/conceptual_12m/cc12m.tsv
+- Please put the prepared checkpoints in file `dataset`.
+- Prepare CC12M dataset: https://storage.googleapis.com/conceptual_12m/cc12m.tsv.
 - Prepare InstructPix2Pix and MagicBrush datasets: these two datasets [InstructPix2Pix](https://huggingface.co/datasets/timbrooks/instructpix2pix-clip-filtered) and [MagicBrush](https://huggingface.co/datasets/osunlp/MagicBrush) are prepared in diffusers website. Download them first and use `python process_HF.py` to process them from "parquet" file to "arrow" file.
 - Prepare RefCOCO, GRefCOCO and COCOStuff datasets: please follow [InstructDiffusion](https://github.com/cientgu/InstructDiffusion/tree/main/dataset) to prepare them.
 - Prepare LISA ReasonSeg dataset: please follow [LISA](https://github.com/dvlab-research/LISA#dataset) to prepare it.
@@ -58,14 +58,17 @@ cd ..
 
 ### Stage-1: textual alignment with CC12M
 - Use the script to train:
+
         bash scripts/TrainStage1_7b.sh
         bash scripts/TrainStage1_13b.sh
 
 ### Stage-2: SmartEdit training
 - Use the script to train first:
+
         bash scripts/MLLMSD_7b.sh
         bash scripts/MLLMSD_13b.sh
 - Then, use the script to train:
+
         bash scripts/SmartEdit_7b.sh
         bash scripts/SmartEdit_13b.sh
 
@@ -74,11 +77,13 @@ cd ..
 - Please download [Reason-Edit evaluation benchmark](https://drive.google.com/drive/folders/1QGmye23P3vzBBXjVj2BuE7K3n8gaWbyQ) and put it in file `dataset`
 
 - Use the script to inference on understanding and reasoning scenes:
+
         python test/DS_SmartEdit_test.py --is_understanding_scenes True --model_name_or_path "./checkpoints/vicuna-7b-v1-1" --LLaVA_model_path "./checkpoints/LLaVA-7B-v1" --save_dir './checkpoints/SmartEdit-7B/Understand-15000' --steps 15000 --total_dir "./checkpoints/SmartEdit-7B" --sd_qformer_version "v1.1-7b" --resize_resolution 256
         python test/DS_SmartEdit_test.py --is_reasoning_scenes True --model_name_or_path "./checkpoints/vicuna-7b-v1-1" --LLaVA_model_path "./checkpoints/LLaVA-7B-v1" --save_dir './checkpoints/SmartEdit-7B/Reason-15000' --steps 15000 --total_dir "./checkpoints/SmartEdit-7B" --sd_qformer_version "v1.1-7b" --resize_resolution 256
         python test/DS_SmartEdit_test.py --is_understanding_scenes True --model_name_or_path "./checkpoints/vicuna-13b-v1-1" --LLaVA_model_path "./checkpoints/LLaVA-13B-v1" --save_dir './checkpoints/SmartEdit_13b_ckpt/Understand-15000' --steps 15000 --total_dir "./checkpoints/SmartEdit-13B" --sd_qformer_version "v1.1-13b" --resize_resolution 256
         python test/DS_SmartEdit_test.py --is_reasoning_scenes True --model_name_or_path "./checkpoints/vicuna-13b-v1-1" --LLaVA_model_path "./checkpoints/LLaVA-13B-v1" --save_dir './checkpoints/SmartEdit_13b_ckpt/Reason-15000' --steps 15000 --total_dir "./checkpoints/SmartEdit-13B" --sd_qformer_version "v1.1-13b" --resize_resolution 256
 - You can use different resolution to inference on reasoning scenes:
+
         python test/DS_SmartEdit_test.py --is_reasoning_scenes True --model_name_or_path "./checkpoints/vicuna-7b-v1-1" --LLaVA_model_path "./checkpoints/LLaVA-7B-v1" --save_dir './checkpoints/SmartEdit_7b_ckpt/Reason-384-15000' --steps 15000 --total_dir "./checkpoints/SmartEdit-7B" --sd_qformer_version "v1.1-7b" --resize_resolution 384
         python test/DS_SmartEdit_test.py --is_reasoning_scenes True --model_name_or_path "./checkpoints/vicuna-13b-v1-1" --LLaVA_model_path "./checkpoints/LLaVA-13B-v1" --save_dir './checkpoints/SmartEdit_13b_ckpt/Reason-384-15000' --steps 15000 --total_dir "./checkpoints/SmartEdit-13B" --sd_qformer_version "v1.1-13b" --resize_resolution 384
 
