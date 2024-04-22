@@ -1,0 +1,120 @@
+#############################################################################################################################
+1.
+Human: Could you produce an image based on the previous image and text description [cap]? 
+GPT: Certainly, I can create the image you requested [img].
+
+2.
+Human: Please generate an image that corresponds to the previous image and text description [cap]. 
+GPT: Sure, I can generate the image you're looking for [img].
+
+3.
+Human: Can you create an image that represents the previous image and text description [cap]? 
+GPT: Of course, I have created the image you requested [img].
+
+4.
+Human: I'm looking for a new image that matches the conditional image and caption [cap]. 
+GPT: Understood, the image you need is [img].
+
+5.
+Human: Please provide me with an image that corresponds to the conditional image and caption [cap]. 
+GPT: Sure, here is the image that corresponds to the conditional image and caption [img].
+
+6.
+Human: Could you create an image that matches the conditional image and caption [cap]? 
+GPT: Absolutely, I have created the image that matches the conditional image and caption [img].
+
+7.
+Human: Can you make a visual based on the prior image and caption [cap]? 
+GPT: Yes, I can make the visual you requested [img].
+
+8.
+Human: Please generate a visual that corresponds to the prior image and caption [cap]. 
+GPT: Of course, I can generate the visual you're looking for [img].
+
+9.
+Human: I need an image that represents the prior image and caption [cap]. Can you create it? 
+GPT: Certainly, I have created the image that represents the prior image and caption [img].
+
+10.
+Human: Please provide me with an image that depicts the former image and concept [cap]. 
+GPT: Sure, here is the image that depicts the former image and concept [img].
+
+11.
+Human: Can you create an image that represents the former image and concept [cap]? 
+GPT: Absolutely, I have created the image that represents the former image and concept [img].
+
+12.
+Human: I'm looking for an image that captures the former image and concept [cap]. Can you make it? 
+GPT: Yes, I have created the image that captures the former image and concept [img].
+
+13.
+Human: Could you create a graphic that matches the earlier visual and description [cap]? 
+GPT: Of course, I can create the matching graphic you're looking for [img].
+
+14.
+Human: Please generate a graphic that corresponds to the earlier visual and description [cap]. 
+GPT: Certainly, I can generate the graphic you requested [img].
+
+15.
+Human: I need a graphic that goes with the earlier visual and description [cap]. Can you create it? 
+GPT: Yes, I have created the graphic that goes with the earlier visual and description [img].
+
+16.
+Human: Can you design an image according to the older visual and idea [cap]? 
+GPT: Yes, I can design the image you requested [img].
+
+17.
+Human: Please create an image that corresponds to the older visual and idea [cap]. 
+GPT: Sure, I can create the image you're looking for [img].
+
+18.
+Human: I need an image that represents the older visual and idea [cap]. Can you design it? 
+GPT: Absolutely, I have designed the image that represents the older visual and idea [img].
+
+19.
+Human: Please create a visual representation using the past graphic and theme [cap]. 
+GPT: Understood, the visual representation you requested is [img].
+
+20.
+Human: Can you generate a visual representation that uses the past graphic and theme [cap]? 
+GPT: Yes, I have generated the visual representation you requested [img].
+
+21.
+Human: I'm looking for a visual representation that uses the past graphic and theme [cap]. Can you create it? 
+GPT: Certainly, I have created the visual representation you requested [img].
+
+22.
+Human: Could you create an image that conveys the previous visual and notion of [cap]? 
+GPT: Of course, I have created the image that conveys the previous visual and notion you requested [img].
+
+23.
+Human: Please generate an image that represents the previous visual and notion of [cap]. 
+GPT: Yes, I can generate the image you're looking for [img].
+
+24.
+Human: I need an image that embodies the previous visual and notion of [cap]. Can you create it? 
+GPT: Certainly, I have created the image that embodies the previous visual and notion of [img].
+
+25.
+Human: Can you create an image that embodies the preceding picture and idea [cap]? 
+GPT: Certainly, I have created the image that embodies the preceding picture and idea [img].
+
+26.
+Human: I'm looking for an image that captures the preceding picture and idea [cap]. Can you generate it?
+GPT: Yes, I have generated the image that captures the preceding picture and idea [img].
+
+27.
+Human: Please provide me with an image that represents the preceding picture and idea [cap]. 
+GPT: Of course, here is the image that represents the preceding picture and idea [img].
+
+28.
+Human: Could you design a visual that captures the former picture and message [cap]? 
+GPT: Yes, I can design the visual that captures the former picture and message [img].
+
+29.
+Human: Please generate a visual that represents the former picture and message [cap]. 
+GPT: Certainly, I can generate the visual you're looking for [img].
+
+30.
+Human: I need a visual that embodies the former picture and message [cap]. Can you design it? 
+GPT: Of course, I have designed the visual that embodies the former picture and message [img].
