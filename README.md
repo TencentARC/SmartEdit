@@ -98,7 +98,7 @@ If you are interested in our work, please star ⭐ our project.
         python test/metrics_evaluation.py --edited_image_understanding_dir "./checkpoints/SmartEdit-13B/Understand-15000" --edited_image_reasoning_dir "./checkpoints/SmartEdit-13B/Reason-15000"
 
 # Todo List
-- [ ] Release checkpoints that could conduct "add" functionality (e.g., "Add a smaller eleplant.") Add support to low-memory GPU environment.
+- [ ] Release checkpoints that could conduct "add" functionality (e.g., "Add a smaller eleplant").
 - [ ] Web demo.
 
 ### Contact
