@@ -103,7 +103,6 @@ If you are interested in our work, please star ⭐ our project.
 
 ### Todo List
 - [ ] Release checkpoints that could conduct "add" functionality (e.g., "Add a smaller eleplant").
-- [ ] Web demo.
 
 ### Contact
 For any question, feel free to email yuzhouhuang@link.cuhk.edu.cn and lb.xie@siat.ac.cn
