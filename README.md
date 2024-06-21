@@ -110,10 +110,11 @@ For any question, feel free to email yuzhouhuang@link.cuhk.edu.cn and lb.xie@sia
 
 ### Citation	
 ```
-@article{huang2023smartedit,
-  title={SmartEdit: Exploring Complex Instruction-based Image Editing with Multimodal Large Language Models},
+@inproceedings{huang2024smartedit,
+  title={Smartedit: Exploring complex instruction-based image editing with multimodal large language models},
   author={Huang, Yuzhou and Xie, Liangbin and Wang, Xintao and Yuan, Ziyang and Cun, Xiaodong and Ge, Yixiao and Zhou, Jiantao and Dong, Chao and Huang, Rui and Zhang, Ruimao and others},
-  journal={arXiv preprint arXiv:2312.06739},
-  year={2023}
+  booktitle={Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition},
+  pages={8362--8371},
+  year={2024}
 }
 ```
